@@ -1,0 +1,82 @@
+{
+  "cli": {
+    "appVersionSource": "remote",
+    "version": ">= 10.0.2"
+  },
+  "build": {
+    "base": {
+      "node": "20.19.4"
+    },
+    "development": {
+      "autoIncrement": true,
+      "channel": "development",
+      "distribution": "internal",
+      "environment": "development",
+      "env": {
+        "EXPO_PUBLIC_APP_VARIANT": "development"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "development:store": {
+      "autoIncrement": true,
+      "channel": "development",
+      "distribution": "store",
+      "environment": "development",
+      "env": {
+        "EXPO_PUBLIC_APP_VARIANT": "development"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "staging": {
+      "autoIncrement": true,
+      "channel": "preview",
+      "distribution": "internal",
+      "environment": "preview",
+      "env": {
+        "EXPO_PUBLIC_APP_VARIANT": "staging"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "staging:store": {
+      "autoIncrement": true,
+      "channel": "preview",
+      "distribution": "store",
+      "environment": "preview",
+      "env": {
+        "EXPO_PUBLIC_APP_VARIANT": "staging"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "channel": "production",
+      "distribution": "internal",
+      "environment": "production",
+      "env": {
+        "EXPO_PUBLIC_APP_VARIANT": "production"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production:store": {
+      "autoIncrement": true,
+      "channel": "production",
+      "distribution": "store",
+      "environment": "production",
+      "env": {
+        "EXPO_PUBLIC_APP_VARIANT": "production"
+      }
+    }
+  },
+  "submit": {
+    "development:store": {},
+    "staging:store": {},
+    "production:store": {}
+  }
+}
